@@ -1,0 +1,67 @@
+variable
+	Data type
+	variable name
+	value
+	declaration ( mandatory before using )
+	initialization - assign a value to a declared variable for the first time
+	Use a variable only if it has a value.
+		printing
+		assigning
+	equal sign rules... assignment operator
+		RHS of equal sign should match the data type
+		LHS of equal sign should always be a variable
+		If RHS is another variable.. then value of that varible gets assigned
+			to the LHS varible
+		If RHS is another variable.. RHS & LHS data type should match
+		
+		int a = 20; // a=20
+		a=10; // a=10
+		int b = 30; // b is 30
+		b=40; // b is 40
+		b=a; // a is 10.. value of RHS var a .. is reassig to b
+		System.out.println(a);
+		System.out.println(b);
+		
+		
+		int c=10; 
+		int d=10;
+		boolean e=true;
+		d=c; // NO errors
+		d=e; // errors
+		
+		
+		Primitve variable - can have literal values
+		Object variables - can have reference value (new <class_name>)
+			String can have both
+		
+	
+Relationship between 2 programs	(Reusability)	
+IS-A - inheritnace
+HAS-A - composition
+
+
+Person 
+Hand
+Student
+School
+
+Person HAS-A Hand
+public class Person{
+	Hand h=new Hand();
+}
+
+Student IS-A Person
+public class Student extends Person{
+
+}
+
+
+School HAS-A Student
+public class School {
+	Student s=new Student();
+}
+
+
+
+
+
