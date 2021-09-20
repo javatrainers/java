@@ -33,7 +33,44 @@ variable
 		Primitve variable - can have literal values
 		Object variables - can have reference value (new <class_name>)
 			String can have both
-		
+
+
+
+
+Methods :
+	Ouput : CAN ALWAYS BE 0 or 1
+		0 = void  ... 
+			public  void hello(String message)
+		1 = appropriate data type, int/boolean... 
+			public int add(int a, int b)
+		more than 1 = complex or multiple infor to return, create an object data type 
+			public Profile display(String userid)
+	Input : CAN ALWAYS BE 0 or MORE
+		0 = if no input require, leave it empty
+			public int bye(  )
+		More = if more than 1 input , separated by comma. data type followed by the name 
+			public int add(int number1, int number2)
+
+	NAMES : allowed alphabet, digits and $ _
+		can start with alphabet $  _
+
+	METHOD declaration - declares output, input and name of the operation
+	METHOD definition - place with curly bracket to provide logic 
+
+
+	return statement
+		if void - no return required
+		if anything but void - return required
+			primitive data type - 
+				literal value that matches output data type 
+					or 
+				variable that matches output data type 
+			Object data type
+				variable that matches output data type 
+				
+				
+				
+				
 	
 Relationship between 2 programs	(Reusability)	
 IS-A - inheritnace
@@ -60,6 +97,75 @@ School HAS-A Student
 public class School {
 	Student s=new Student();
 }
+
+
+
+Actions / Methods / Does-A 
+
+Input : enter the amount.... amountWithdraw... integer
+Output : integer
+Name : withdraw
+
+declare method : 
+public int withdraw(int amountWithdraw)
+output	Name(input)
+
+
+calculate simple interest
+Name : simpleInterest
+Input : amount , interestRate, term
+Ouput : siResult
+
+public outputtype name(inputtype intputname  )
+public double 	simpleInterest(int amount, double interestRate, short term )
+
+addition - 
+Name : calculateSum
+Input : 2 number
+Ouput : 1 number
+public int calculateSum( int number1, int number2  )
+
+area of sqaure
+Name :  squareArea
+Input : number side
+Ouput : number
+public int squareArea( int side)
+
+area of rectangle
+Name : rectangleArea
+Input : number length, number width
+Ouput : number
+public int rectangeArea( int length,int width)
+
+area of circle
+Name : circleArea
+Input : number radius
+Ouput : number
+public int circleArea( int radius)
+
+payment
+Name : payment
+Input : number charges, number creditCardNumber, number cvc, String xpiryDate
+Output : succesfully/ failed boolean
+public boolan payment( float charges, long creditCard,short cvc, String expDate)
+
+Login
+Name : loginAuth
+Input :  String  usernname,String  password
+Output : boolean
+
+public boolean loginAuth(  String username, String password)
+
+
+showProfile
+Name : displayProfile
+Input : String  usernname,String  password
+Output :  name, address, phone, email,education
+
+
+
+
+
 
 
 
