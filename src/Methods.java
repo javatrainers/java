@@ -1,10 +1,12 @@
 public class Methods {
-	
 	public void testing(Person p) {
 		p=new Person();
 		p.name="mike";
+		testing2(p);
 	}
-	
+	public void testing2(Person p2) {
+		p2.name="andy";
+	}
 	public void test(int a,Person p) {
 		p.name="jane"; // permanent
 				// impacting p1
