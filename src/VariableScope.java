@@ -8,7 +8,13 @@ public class VariableScope {
 	// } of the method
 	int z=10;
 	
-	public void conflict() {
+	void abc() {
+		int _x123_$; // delcaration
+		x=10; // initialization
+		x=20; // reassignment
+		
+	}
+	public void m1(  ) {
 		// local variable = NO CONFLICT ALLOWED
 		// local vs global = CONLICT ALLOWED
 		{

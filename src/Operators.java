@@ -52,7 +52,7 @@ public class Operators {
 		
 		boolean bo=false;
 		System.out.println( !bo );
-		
+		int personAge=30;
 		int g=10;
 		int h=20;
 		System.out.println(  !(g<h) );
