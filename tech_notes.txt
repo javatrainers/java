@@ -249,3 +249,32 @@ ATM :
 	}
 	
 	
+	
+	bank
+		has-a : balance=100;
+		
+		does-a : 
+			withdraw;
+			deposit
+	************** inheritnace *****
+	int i=20;
+	Iphone i = new IphoneX();
+	
+	
+	1) "new" can be applied only on Complete class
+	2) equal sign
+		RHS should be same or CHILD of LHS
+			Student s=new Student(); // RHS same
+			Nissan n=new NissanZ(); // RHS child
+	3) method call
+		Nissan nis=new Nissan();
+		test(nis);
+		
+		NissanZ nisZ=new NissanZ();
+		test(nisZ); // method call u can pass any variable that is CHILD of method parameter data type
+		
+		public void test(ICar ic){
+			ic.drive();
+		}
+	
+	

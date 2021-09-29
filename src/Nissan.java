@@ -1,15 +1,11 @@
-// concrete/complete class
-public class Nissan implements ICar{
+public class Nissan implements ICar,IMusic{
 	public void drive() {
-		System.out.println("driving");
-	}
-	public void takeTurn(){
-		System.out.println("taking turn");
+		System.out.println("nissan driving");
 	}
 	public void start(){
-		System.out.println("starting car");
-	} 
-	public void stop() {
-		System.out.println("stopping car");		
+		System.out.println("Nissan starting car");
+	}
+	public void playMusic() {
+		System.out.println("play music");
 	}
 }
