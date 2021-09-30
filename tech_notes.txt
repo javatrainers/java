@@ -278,3 +278,177 @@ ATM :
 		}
 	
 	
+	
+	interface IIphone
+	makecall();
+	text();
+	browse();
+	screen();
+	
+class IPhone3 implements IIphone	
+	makecall(){ smart phone call }
+	text() { smart text }
+	browse() { internet browsing }
+	screen() { display screen }
+	
+class IPhone4 extends IPhone3
+	appleMaps(){ geo service }
+
+class Iphone5 extends Iphone4
+	bioFingerScan() { finger print scan }
+	
+class IPhone6 extends Iphone5
+	applePay() { asdasd }
+	
+class IphoneX extends Iphone6
+	screen() { display bigger screen } Override parents implementation
+	
+	
+	interface IIphone
+	makecall();
+	text();
+	browse();
+	screen();
+	default installApp(){
+			sfsdfsdfsdf
+	}
+	
+	IIphone i=new IIphone(); // WRONG, new cannot be used for interface or abstract classes
+abstract class IPhone3 implements IIphone	 // WRONG, if any methods not implemented declare class as abstract
+	makecall(){ smart phone call }
+	text() { smart text }
+	browse() { internet browsing }
+	// inherited 1 incomplete/abstract method..... screen 
+	
+class IPhone4 extends Iphone3
+	appleMaps(){ geo service }
+	screen(){ sdfsdfs }
+	
+	
+class IPhone5 extends Iphone4
+	biometricScan(){  sdfsd  }
+class Iphone6 extends Iphone5
+	facialRecog(){ sdfdsf }
+		
+	Iphone5 i4=new Iphone4(); // WRONG , RHS should be child of LHS
+	IIphone i3=new Iphone3();// WRONG, RHS should be concrete/complete child of LHS
+	Iphone3 i3=new Iphone5(); // GOOD
+	Iphone4 i4=new Iphone6(); // WRONG, RHS not inheriting from above
+	
+	backward compatibility - Before java 1.8 
+	
+	typecasting
+	
+	
+Interface ICar
+	drive();
+	default sing(){ classic }
+	
+class Nissan implements ICar
+	drive(){ driving nissan }
+	start(){ start nissan }
+	playMusic(){ play }
+	
+class NissanZ extends Nissan
+	drive(){ driving nissan faster}
+	autoDrive() { autonomus driving }
+	
+ICar ic=new Nissan();	
+ic.drive(); // no errors
+ic.sing(); // no errors
+((Nissan)ic).start(); // error	( ic has start and playmusic.. HIDDEN )
+((NissanZ)ic).autoDrive(); 	
+	
+	
+	Iphone5 
+	
+	
+	Abstract classes - Generalization rule (common features)
+adding new feauters, coding effort , modifying existing feature
+INissanCar
+	engine();
+	start();
+	stop();
+	body();
+	doors();
+	airConditioner(); // adding new feature in interface ????
+	
+// Giant big engine (common parts ) manufacturing
+abstract class NissanAbstract implements ICar
+	engine() { adssad asdasdas } 
+	start() { asdsad keyless start }
+	stop() { asdsadasd }
+	airconditner { hot cold } 
+	// inherited body, door INCOMPLET/ABSTRACT methods
+
+// assembly NissanE body, small factory
+class NissanE extends NissanAbstract
+	// inherited body, door, INCOMPLET/ABSTRACT methods
+	body(){ moon roof }
+	door(){ 4 doors }
+	
+class NissanSE extends NissanAbstract
+	// inherited body, door,  INCOMPLET/ABSTRACT methods
+	body(){ moon roof  and spoiler }
+	door(){ 3 doors }
+	
+class NissanLimited extends NissanAbstract
+	// inherited body, door,  INCOMPLET/ABSTRACT methods
+	body(){ spoiler and panaromic roof }
+	door(){ 2 doors }
+	
+	
+	
+	
+	
+
+INissanCar
+	engine();
+	start();
+	stop();
+	body();
+	doors();
+	airConditioner(); // adding new feature in interface ????
+	
+class NissanE implements INissan
+	engine() { adssad} 
+	start() { asdsad keyless start}
+	stop() { asdsadasd }
+	body(){ moon roof }
+	door(){ 4 doors }
+	airConditioner(){ cool hot } 
+	
+class NissanSE implements INissan
+	engine() { adssad} 
+	start() { asdsad keyless start}
+	stop() { asdsadasd }
+	body(){ moon roof  and spoiler }
+	door(){ 3 doors }
+	airConditioner(){ cool hot } 
+	
+class NissanLimited implements INissan
+	engine() { adssad} 
+	start() { asdsad keyless start }
+	stop() { asdsadasd }
+	body(){ spoiler and panaromic roof }
+	door(){ 2 doors }
+	airConditioner(){ cool hot } 
+	
+	
+	
+	IPayment
+	billingAddress();
+	ShippingAddress();
+	payment();
+	collectemailid();
+abstract class AbstractPayment implements IPayment
+	billingAddress(){} 
+	ShippingAddress(){  enter street , enter city, enter zip, enter county} 
+	collectemailid(){ asdasdsa }
+		
+class CreditCard extends AbstractPayment
+	payment(){ adssadas }
+class DebitCard extends AbstractPayment
+	payment(){ 16 digit number, 3 sec code}
+class Paypal extends AbstractPayment
+	payment(){ paypal userid  , paypal password }

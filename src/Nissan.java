@@ -1,4 +1,7 @@
 public class Nissan implements ICar,IMusic{
+	public void sing() {
+		System.out.println("traditional");
+	}
 	public void drive() {
 		System.out.println("nissan driving");
 	}

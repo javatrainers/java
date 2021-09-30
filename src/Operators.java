@@ -42,12 +42,6 @@ public class Operators {
 		 // r--; // post
 		 // ++r; // pre
 		System.out.println("** incre/decr **");
-		int r=10;
-		System.out.println( --r ); // r=9 , print 9
-		System.out.println( r++ ); // print 9, r=10
-		System.out.println( --r ); // r=9 , print 9
-		System.out.println( r-- ); // print 9, r=8
-		System.out.println( ++r ); // r=9 , print 9
 		// 9 9 9 9 9
 		
 		boolean bo=false;
