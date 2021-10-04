@@ -452,3 +452,61 @@ class DebitCard extends AbstractPayment
 	payment(){ 16 digit number, 3 sec code}
 class Paypal extends AbstractPayment
 	payment(){ paypal userid  , paypal password }
+
+
+************** access privilege *************
+
+www.amazon.com
+packages
+package com.amazon.www.login;
+	Login.java
+	registeration.java
+com.amazon.www.browse
+	shopping.java
+	cart.java
+com.amazon.www.payment	
+	credit.java
+	paypal.java
+com.amazon.www.orderManagement	
+	order.java
+	
+
+
+2 program 
+is-a : inheritance.... extends, implements
+has-a : composition... create reference
+
+ParentPack1 = ChildPack1 ( is-a .. same package)
+			public,protected,package
+ParentPack1 = OtherPack1 ( has-a .. same package)
+			public,protected,package
+ParentPack1 = ChildPack2 ( is-a .. different package)
+			public,protected
+ParentPack1 = OtherPack2 ( has-a .. different package)
+			public
+		
+class memebers - variable, methods, constructors		
+public > protected > package > private
+
+*************** polymorphism ******
+runtime polymorphism : Overriding (Child overrides parent solution)
+	redeclare parent method in child class
+	method signature is SAME
+	occurs between child and parent
+compile-time polymorphism : Overloading 
+	redeclaring method with different parameters/input
+	method signature is DIFFERENT
+	occurs in same program or between child/parent
+	
+Many forms : same functionality achiveed in many ways
+
+*************** final ***************
+
+variable : cannot change value
+method : 	cannot runtime POLYMORPHISM (overriding)
+class : cannot INHERIT
+
+
+
+
+

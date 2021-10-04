@@ -6,4 +6,7 @@ public class NissanZ extends Nissan{
 	public void autoDrive() {
 		System.out.println(" driverless");
 	}
+	public void takeTurn(float f) {
+		System.out.println("turning right");
+	}
 }

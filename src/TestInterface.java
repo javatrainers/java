@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class TestInterface {
 
 	public static void main(String[] args) {
+		
+		NissanZ n=new NissanZ();
+		n.takeTurn(10);
+		n.takeTurn("asd");
+		n.takeTurn(10.0f);
+		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Press 1 for nissan , 2 for luxury nissan");
 		int option=sc.nextInt();
