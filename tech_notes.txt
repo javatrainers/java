@@ -503,9 +503,13 @@ Many forms : same functionality achiveed in many ways
 *************** final ***************
 
 variable : cannot change value
+	constant unchangeable information... like ssn,dna,genes
 method : 	cannot runtime POLYMORPHISM (overriding)
+	Perfect method... never wish to change.
 class : cannot INHERIT
+	All methods are PERFECT.... 
 
+*************** static ***************
 
 
 

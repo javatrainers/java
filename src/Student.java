@@ -1,6 +1,6 @@
-// child class, sub class
 public class Student
-extends Person  
 {
-
+	String name;
+	int grade;
+	
 }
