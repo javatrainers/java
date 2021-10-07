@@ -1,6 +1,7 @@
 
 public class SchoolArray {
-
+	public int a;
+	
 	public static void main(String[] args) {
 		// array declaration
 		// size of student variables
@@ -11,7 +12,6 @@ public class SchoolArray {
 		
 		for(int i=0;i<5;i++)
 			allStudents[i]=new Student();
-		
 		
 		for(Student s:allStudents)
 			s=new Student();

@@ -271,7 +271,8 @@ ATM :
 		test(nis);
 		
 		NissanZ nisZ=new NissanZ();
-		test(nisZ); // method call u can pass any variable that is CHILD of method parameter data type
+		test(nisZ); // method call u can pass any variable 
+				//that is CHILD of method parameter data type
 		
 		public void test(ICar ic){
 			ic.drive();
@@ -514,3 +515,153 @@ class : cannot INHERIT
 
 
 
+
+****************** test *****************
+
+
+public class Parent{
+	// compiler provided default constructor
+	public Parent(){
+	
+	}
+	public void Parent(){
+		sysout(papa);
+	}
+}
+public class Son extends Parent{
+	public Son(){
+		super(); // compiler will add this line
+		sysout(son);
+	}
+}
+Son s=new Son();
+
+
+class I3
+	phone
+class I4 extends I3
+	text
+class I5 extends I4
+	browse
+
+I3 i=new I5();
+i.phone();
+((I5)i).text(); // error
+((I5)i).browse(); // error
+
+1)
+dog(sub) > Animal (parent)
+Animal a=new Dog();
+
+2)
+Dog d=new Dog();
+Animal ani=new Animal();
+m1(ani);
+m1(d); // child/sub class of method parameter
+public void m1(Animal a)
+
+3)
+
+public Animal m2(){
+	Animal a=new Animal();
+	Dog d=new Dog();
+	//return a;
+	return d;
+}
+
+
+
+
+public Dog m2(){
+	Animal a=new Animal();
+	Dog d=new Dog();
+	return a; // a is Animal... Is Animal Parent of Dog ?
+	return d;
+}
+
+
+
+Interface :
+	global variables = final/ Cannot change it
+
+
+Variable : contains information - FINAL
+Method  : change information
+	changing ???? method body
+
+
+public class Bank{
+	
+	int balance = 100;
+	public void withdraw(){
+		balance=50;
+	}	
+	public void deposit(){
+		balance=150;
+	}
+}
+
+
+
+public interface Bank{
+	
+	final int balance = 100; // final
+	public void withdraw();
+	public void deposit();
+}
+
+
+
+***************** exception handling ****************
+
+Why ? 
+	IT team: exception stack trace. 
+		What is the problem ? first line
+		Where is the problem ? first line that starts with "at"
+		Where it all began ? last line that starts with "at"
+		
+		Exception in thread "main" java.lang.ArithmeticException: / by zero
+			at ExceptionHandling.method4(ExceptionHandling.java:22)
+			at ExceptionHandling.method3(ExceptionHandling.java:15)
+			at ExceptionHandling.method2(ExceptionHandling.java:10)
+			at ExceptionHandling.method1(ExceptionHandling.java:5)
+			at ExceptionHandlingTest.main(ExceptionHandlingTest.java:6)
+
+	Customers : convey error message in laymen term. non-technical, easy
+		to understand messages.
+	
+	HOW ?	
+		try : block where programmers anticipate that there could be a problem.
+		catch : safety net.. actions when program crashes
+		finally : guaranteed block
+
+multiple catch
+ATM
+	try
+	{
+		customer swipes card
+		customer enters pin
+		customer withdraw money
+	}
+	catch( damaged card)
+	{
+		please call 1800xxxxxx number and request for replacement
+	}
+	catch( invalid pin)
+	{
+		please reenter pin
+	}
+	catch( lowbalance)
+	{
+		please enter lower amount than your balance
+	}
+
+exception heirarchy
+
+null pointer exception
+
+
+throws
+
+User defined exception
+	
