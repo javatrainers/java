@@ -664,4 +664,32 @@ null pointer exception
 throws
 
 User defined exception
+	technical limitation : 
+		cannot access index of array
+		cannot divide a number by zero = infinite value
+		cannot apply dot operator on null variable
+	Business limitation :
+		Bank : cannot withdraw more than your balance.
+				no negative value in balance variable
+		Telecom : number should be 10 digit long.. 1000000000 - 9999999999
 	
+
+
+
+String s1="john";     // inside - 1, outside - 0
+String s2=new String("john"); // inside - 1, outside - 1
+String s3="john"; // inside - 1(shared), outside - 1
+String s4=new String("john"); // inside - 1(shared), outside - 2
+s1="jane"; // inside - 2, outside - 2
+s2=s1 + s3; // inside -3 , out side -2
+
+String pool : ? s1/s3=john, s1=jane, s2=jane john
+Outside String pool : s2=john, s4=john
+
+
+
+
+
+
+
+

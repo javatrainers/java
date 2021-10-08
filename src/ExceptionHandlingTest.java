@@ -4,7 +4,30 @@ import java.io.IOException;
 public class ExceptionHandlingTest {
 
 	public static void main(String[] args) {
+	Phone p=new Phone();
+	try {
+		p.callNumber();
+	} catch (InvalidPhoneNumberException e) {
+		e.printStackTrace();
+	}
+	
+	BnkAccountExc bank=new BnkAccountExc();
+	try {
+		bank.withdraw();
+	} catch (InsufficientFundException e) {
+		e.printStackTrace();
+	}
 		
+		/*
+		ExceptionHandling eh=new ExceptionHandling();
+			try {
+				eh.method1();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+		/*
 		// exception line
 		int a=10/0; // runtime exception
 		
