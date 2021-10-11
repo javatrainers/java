@@ -3,7 +3,15 @@ import java.io.IOException;
 
 public class ExceptionHandlingTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
+	
+		ExceptionHandling eh=new ExceptionHandling();
+		eh.method1();
+	
+		
+		
+		
+		
 	Phone p=new Phone();
 	try {
 		p.callNumber();

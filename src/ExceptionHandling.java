@@ -10,7 +10,7 @@ public class ExceptionHandling {
 		//System.out.println( p.weight + p1.weight);
 		System.out.println("method1");
 		method2();
-		
+		System.out.println("");
 	}
 
 	public void method2() throws IOException {

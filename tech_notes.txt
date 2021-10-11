@@ -688,8 +688,32 @@ Outside String pool : s2=john, s4=john
 
 
 
+String email=asdsadsad = invalid
+String email=asd@gmail.com = valid
+String email=@gmail.com = invalid
+
+email.contains("@")
+
+equals
+equalsIgnoreCase
+
+Hi how are you?
+
+java = Java
+JAva123! = JAva123!
+Register - choose userid and password.... store in the system
+login - enter uid , pwd...
+"java"=="java"
+
+login userid and register userid = equals / equalsIgnoreCase
+login password and register password = equals
+
+1234567890
+123-456-7890
+123 456 7890
+(123)456 7890
 
 
-
+john doe
 
 
