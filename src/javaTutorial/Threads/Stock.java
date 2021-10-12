@@ -2,7 +2,7 @@ package javaTutorial.Threads;
 
 public class Stock {
 
-int quantity;
+int quantity;// 0
 
 public void updateStock(int newStock)
 {
