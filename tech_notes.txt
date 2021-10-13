@@ -716,4 +716,31 @@ login password and register password = equals
 
 john doe
 
+********** collection *****************
+
+List
+	arraylist : internally stores item in an array ( stacked )
+	vector : internally stores item in an array ( stacked )
+	linked list : store items like a chain...
+		every item in chain is connected to the one before and the one after
+booking airline ticket
+ multiple customers booking same time
+ collection ??? <seats>
+ 
+ 
+ restuarant store screen
+ display customer name 
+ 
+ Hashset - un ordered
+ linked hashset - unique, ordered
+ Tree - sorted
+ 
+ Airport - display flight num &
+	flight status
+ 
+ Treeset
+
+
+If you are storing User Defined Object in Set or key section of a Map.
+	you need to write code .. categorization (hashcode) search dup (equals)
 
