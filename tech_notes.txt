@@ -744,3 +744,90 @@ booking airline ticket
 If you are storing User Defined Object in Set or key section of a Map.
 	you need to write code .. categorization (hashcode) search dup (equals)
 
+If you are storing User Defined Object in TreeSet or key section of a TreeMap.
+	you need to implement comparable interface. and implement (compareTo)
+
+Collection - items that u store requires 3 methods... equals, hashcode and compareTo
+	Method can only be written a Object Data type ( in a class)
+	primitive - NO available class for this data type.. without existing class above 3 methods cant be written.
+		therefore primitive is not supported by Collection.
+	Object - has Class YES... so can support by collection
+
+
+
+************ FILE IO **********************
+
+Data flows between source and destination
+
+Source - program , desitnation - hard drive
+
+Source - remote machine Youtube , destination - your machine
+
+Character Stream - digital content flow in Text format
+	Text content - email, chatting, userid and password
+Binary Stream - digital content flow in Non-Text format (binary)
+	Binary content - image, video, animation
+
+I/O = Input and Output
+Input - Data that you receive/reading (Download)
+Output - Data that you send/writing (Upload)
+
+youtube streaming - Input to your browser software .... Download
+Facebook Post - Output from your browser software ..... Upload
+
+Buffering - ?????
+
+#123 street1 									#234 street2
+
+Car-Trunk is 100% FULL >>>>>>>>>>>>>>>>>>>>>>>> 
+Car-Trunk is 100% FULL >>>>>>>>>>>>>>>>>>>>>>>> 
+Car-Trunk is 100% FULL >>>>>>>>>>>>>>>>>>>>>>>> 
+Car-Trunk is 100% FULL >>>>>>>>>>>>>>>>>>>>>>>> 
+Car-Trunk 70% full >>>>>XXXXXX (FLUSH = cleanup last remaining things... without 100% buffer full)
+
+Character Stream : transfer group of char - character array - String
+	Reader : read text content from source location
+	Writer : Ouput/write text content in destination location
+
+Binary Stream : transfer group of byte - byte array 
+	InputStream : read binary content from source location
+	OutputStream : Ouput/write binary content in destination location
+
+10 character iteam
+
+Java program
+File Writer
+	37 trips - 37 characters
+
+Buffered transfer ?10 character
+	1 trip - 10 character
+	2 trip - 10-20 chracter
+	3 trip - 20-30 character
+	4 trip - 7 character-flush
+
+hi how are you 
+ welcome to java 
+ byebye
+
+
+
+File I/O
+Standard I/O - 
+	system.out
+	system.in 
+Serialization - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

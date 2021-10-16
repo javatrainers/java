@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class StudentCol implements Comparable<StudentCol>
+public class StudentCol implements Comparable<StudentCol>,Serializable
 {
 	String name;
 	int grade;

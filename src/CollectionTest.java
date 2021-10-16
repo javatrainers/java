@@ -4,12 +4,22 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.Set;
 import java.util.TreeSet;
 import java.util.Vector;
 
 public class CollectionTest {
 
 	public static void main(String[] args) {
+		
+		int[] a=new int[5];
+		Student[] b=new Student[4];
+		
+		// Wrapper classes = Object version of primitive int
+		// Integer = int, Float = float, Character= char
+		// Boolean = boolean , Double = double
+		
+		
 		StudentCol ss1=new StudentCol("john",1);
 		StudentCol ss2=new StudentCol("jane",2);
 		StudentCol ss3=new StudentCol("mike",1);
@@ -23,9 +33,23 @@ public class CollectionTest {
 		studs.put(3, ss3);
 		studs.put(4, ss4);
 		studs.put(4, ss5);
-		
-		System.out.println( studs.get(4));
+		System.out.println( studs.get(5));
 		studs.remove(3);
+		
+		
+		HashMap<String, String> test=new HashMap<String, String>();
+		test.put("john","doe");
+		test.put("jane","joe");
+		test.put("mike","toe");
+		System.out.println(test );
+		//test.remove("john");
+		//System.out.println(test );
+		
+		Set<String> allKeys=test.keySet();
+		System.out.println(allKeys);
+		for(String s:allKeys) {
+			System.out.println( test.get(s) );
+		}
 		
 		// Sorting.... Map read
 		
