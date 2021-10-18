@@ -1,11 +1,33 @@
 package javaTutorial.Threads;
 
 import java.util.Date;
+import java.util.HashSet;
 
 public class TestAlarm {
+	
+	public static void m() {
+		String[] s=new String[5];
+		System.out.println( s[0] );
+		System.out.println( s[1] );
+		
+		String name="john"; // john
+		name = name +" jane";// john jane
+		name = name.replace("j", "k"); // kohn kane
+		System.out.println(name);
+		
+		
+		// throwable > exception > runtimeexception > arithemti
+	}
 	public static void main(String args[]) {
+		m();
+		Alarm alarm1=new Alarm(2, "Alarm one");
+		alarm1.start();
+		alarm1.start();
+		HashSet<Stock> showroom=new HashSet<Stock> ();
+		Stock s1=new Stock();
+		showroom.add(s1);
 		
-		
+		/*
 		Alarm alarm1=new Alarm(2, "Alarm one");
 		Alarm alarm2=new Alarm(4, "Alarm two");
 		Alarm alarm3=new Alarm(4, "Alarm three");
@@ -26,6 +48,7 @@ public class TestAlarm {
 		
 		Date ThreadStartTime=new Date();
 		System.out.println("All threads started running at :"+ThreadStartTime);
+		*/
 	}
 
 }
