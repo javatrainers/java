@@ -9,10 +9,11 @@ public class TestAlarm {
 		String[] s=new String[5];
 		System.out.println( s[0] );
 		System.out.println( s[1] );
-		
+		System.out.println(  s[0].equals(s[1]));
 		String name="john"; // john
 		name = name +" jane";// john jane
 		name = name.replace("j", "k"); // kohn kane
+		name=name.substring(5);
 		System.out.println(name);
 		
 		
